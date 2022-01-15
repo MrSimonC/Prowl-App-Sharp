@@ -1,17 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Authors>Simon Crouch</Authors>
-    <Company />
-    <Product>Prowl App Sharp</Product>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Authors>Simon Crouch</Authors>
+		<Company />
+		<Product>Prowl App Sharp</Product>
+		<Description>A .net 6 implementation of sending messages with the Prowl App (for push notifications)</Description>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="LICENSE" />
-    <None Remove="README.md" />
-  </ItemGroup>
+	<ItemGroup>
+		<None Remove="LICENSE" />
+		<None Remove="README.md" />
+	</ItemGroup>
 
 </Project>
