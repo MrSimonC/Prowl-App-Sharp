@@ -12,10 +12,10 @@ namespace Prowl
         private readonly HttpClient HttpClient;
         private readonly string ApiKey;
 
-        public ProwlMessage()
+        public ProwlMessage(string apiKey)
         {
             HttpClient = new HttpClient();
-            ApiKey = Environment.GetEnvironmentVariable("PROWL_API_KEY") ?? throw new ArgumentNullException(ApiKey);
+            ApiKey = apiKey;
         }
 
         public async Task<HttpResponseMessage> SendAsync(
