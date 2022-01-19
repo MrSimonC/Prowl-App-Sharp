@@ -1,11 +1,10 @@
-﻿namespace Prowl.Enums
+﻿namespace Prowl.Enums;
+
+public enum Priority
 {
-    public enum Priority
-    {
-        VeryLow = -2,
-        Moderate = -1,
-        Normal = 0,
-        High = 1,
-        Emergency = 2
-    }
+    VeryLow = -2,
+    Moderate = -1,
+    Normal = 0,
+    High = 1,
+    Emergency = 2
 }

@@ -8,11 +8,30 @@
 		<Company />
 		<Product>Prowl App Sharp</Product>
 		<Description>A .net 6 implementation of sending messages with the Prowl App (for push notifications)</Description>
+		<ApplicationIcon>icons\caticon.ico</ApplicationIcon>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<PackageProjectUrl>https://github.com/MrSimonC/Prowl-App-Sharp</PackageProjectUrl>
+		<PackageIcon>icons\cat.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<RepositoryUrl>https://github.com/MrSimonC/Prowl-App-Sharp</RepositoryUrl>
+		<PackageTags>prowl</PackageTags>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<None Remove="LICENSE" />
-		<None Remove="README.md" />
+	  <Content Include="icons\caticon.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="icons\cat.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	    <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+	  </None>
+	  <None Update="README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
 	</ItemGroup>
 
 </Project>
