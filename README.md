@@ -1,5 +1,5 @@
 # Prowl-App-Sharp
-A .net 6 implementation of sending messages with the Prowl App (for push notifications).
+A .net 6 implementation of sending messages with the push notification ["Prowl" App](https://www.prowlapp.com).
 
 ## Installation
 
@@ -8,17 +8,23 @@ Install `ProwlAppSharp` via nuget ([see nuget page](https://www.nuget.org/packag
 ### Example Usage
 
 ```c#
-string prowlApiKey = Environment.GetEnvironmentVariable("PROWL_API_KEY") ?? throw new ArgumentNullException(nameof(prowlApiKey));
-ProwlMessage = new ProwlMessage(prowlApiKey);
-string websiteName = "My App/Sender name";
+using Prowl;
+
+string prowlApiKey = Environment.GetEnvironmentVariable("PROWL_API_KEY");
+ProwlMessage prowlMessage = new(prowlApiKey);
+string appName = "My app name";
 string description = "My message";
-var prowlResponse = await prowl.SendAsync(description, application: websiteName);
-var success = prowlResponse?.IsSuccessStatusCode ?? false;
+HttpResponseMessage prowlResponse = await prowlMessage.SendAsync(description, application: appName);
 ```
 
 or just create your own `ProwlMessageContents` object and pass that in:
 
 ```c#
+using Prowl;
+using Prowl.Enums;
+using Prowl.Models;
+
+ProwlMessage prowlMessage = new(prowlApiKey);
 var myContents = new ProwlMessageContents
 {
     Description = "My main message",
@@ -27,5 +33,5 @@ var myContents = new ProwlMessageContents
     Application = "MyApp",
     Event = "My Event"
 };
-var prowlResponse = await prowl.SendAsync(myContents);
+var prowlResponse = await prowlMessage.SendAsync(myContents);
 ```
