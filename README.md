@@ -3,7 +3,7 @@ A .net 6 implementation of sending messages with the Prowl App (for push notific
 
 ## Installation
 
-Install `ProwlAppSharp` via nuget ([see nuget page](https://www.nuget.org/packages/ProwlAppSharp)).
+Install `ProwlAppSharp` via nuget ([see nuget page](https://www.nuget.org/packages/ProwlAppSharp) - if you're not already here 😉).
 
 ### Example Usage
 
