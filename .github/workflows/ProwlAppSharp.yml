@@ -1,5 +1,7 @@
 name: CI
 
+# Note: triggered from a branch of release/1.2.3 will push to https://www.nuget.org/packages/ProwlAppSharp/ as v1.2.3
+
 on:
   create:
     branches: 
@@ -24,6 +26,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Get Build Version
+      # GITHUB_REF = current branch or tag
       run: |
         Import-Module .\build\GetBuildVersion.psm1
         Write-Host $Env:GITHUB_REF
