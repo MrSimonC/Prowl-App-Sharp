@@ -7,7 +7,7 @@
 		<Authors>Simon Crouch</Authors>
 		<Company />
 		<Product>Prowl App Sharp</Product>
-		<Description>A .net 6 implementation of sending messages with the Prowl App (for push notifications)</Description>
+		<Description>A .net 7 implementation of sending messages with the Prowl App (for push notifications)</Description>
 		<ApplicationIcon>icons\caticon.ico</ApplicationIcon>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<PackageProjectUrl>https://github.com/MrSimonC/Prowl-App-Sharp</PackageProjectUrl>
