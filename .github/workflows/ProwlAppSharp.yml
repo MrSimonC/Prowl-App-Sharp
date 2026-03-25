@@ -16,9 +16,9 @@ on:
 jobs:
   build:
     env:
-      BUILD_CONFIG: 'Release'
-      PROJECT_NAME: 'ProwlAppSharp.csproj'
-      SOLUTION_NAME: 'ProwlAppSharp.sln'
+      BUILD_CONFIG: Release
+      PROJECT_NAME: ProwlAppSharp.csproj
+      SOLUTION_NAME: ProwlAppSharp.slnx
 
     runs-on: ubuntu-latest
 
@@ -54,5 +54,5 @@ jobs:
         run: dotnet test ProwlAppSharp.Tests/ProwlAppSharp.Tests.csproj --configuration $BUILD_CONFIG --no-build
 
       - name: Publish
-        if: startsWith(github.ref, 'refs/heads/release')
-        run: nuget push **\*.nupkg -Source 'https://api.nuget.org/v3/index.json' -ApiKey ${{secrets.NUGET_API_KEY}}
+        if: startsWith(github.ref, refs/heads/release)
+        run: nuget push **\*.nupkg -Source https://api.nuget.org/v3/index.json -ApiKey ${{secrets.NUGET_API_KEY}}
