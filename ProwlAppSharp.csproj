@@ -19,6 +19,12 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <Compile Remove="ProwlAppSharp.Tests/**/*.cs" />
+	  <EmbeddedResource Remove="ProwlAppSharp.Tests/**/*" />
+	  <None Remove="ProwlAppSharp.Tests/**/*" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <Content Include="icons\caticon.ico" />
 	</ItemGroup>
 
