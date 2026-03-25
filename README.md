@@ -1,5 +1,5 @@
 # Prowl-App-Sharp
-A .NET 10 implementation of sending messages with the push notification ["Prowl" App](https://www.prowlapp.com).
+A multi-targeted .NET 6, .NET 8, and .NET 10 implementation of sending messages with the push notification ["Prowl" App](https://www.prowlapp.com).
 
 ## Installation
 
