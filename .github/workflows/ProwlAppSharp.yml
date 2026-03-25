@@ -1,5 +1,8 @@
 name: CI
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 # Note: triggered from a branch of release/1.2.3 will push to https://www.nuget.org/packages/ProwlAppSharp/ as v1.2.3
 
 on:
