@@ -1,13 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>net7.0</TargetFramework>
+		<TargetFramework>net10.0</TargetFramework>
 		<Nullable>enable</Nullable>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<Authors>Simon Crouch</Authors>
 		<Company />
 		<Product>Prowl App Sharp</Product>
-		<Description>A .net 7 implementation of sending messages with the Prowl App (for push notifications)</Description>
+		<Description>A .NET 10 implementation of sending messages with the Prowl App (for push notifications)</Description>
 		<ApplicationIcon>icons\caticon.ico</ApplicationIcon>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<PackageProjectUrl>https://github.com/MrSimonC/Prowl-App-Sharp</PackageProjectUrl>
